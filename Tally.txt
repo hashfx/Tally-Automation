@@ -1,0 +1,16 @@
+create ledger  				[x]
+create stock item  			[]
+prepare voucher  			[]
+	sell  				[]
+		dr stock broker
+		dr brokerage
+		cr stock item
+	purchase  			[]
+		dr stock item
+		dr brokerage
+		cr stock broker
+alter ledger				[x]
+alter stock item			[x]
+creating stock item			[x]
+fetch stock item			[x]
+

@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vouchers</title>
+     <link type="text/css", href="{{ url_for('static', filename= 'styles.css') }}", rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<p class="title">Vouchers</p>
+<form method="POST" action="/listOfVouchers">
+    <p>Select voucher type:</p>
+
+<select name="voucherType">
+    <option>Sales</option>
+    <option>Purchase</option>
+    <option>Receipt</option>
+    <option>Payment</option>
+</select>
+    <p>From date:</p>
+    <input type="text" name="fromDt">
+    <p>To date:</p>
+    <input type="text" name="toDt">
+    <br>
+    <input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<ENVELOPE>
+    <HEADER>
+        <TALLYREQUEST>Import Data</TALLYREQUEST>
+    </HEADER>
+    <BODY>
+        <IMPORTDATA>
+            <REQUESTDESC>
+                <REPORTNAME>All Masters</REPORTNAME>
+            </REQUESTDESC>
+            <REQUESTDATA>
+                <TALLYMESSAGE xmlns:UDF="TallyUDF">
+                    <STOCKITEM Action="Create">
+                        <NAME>Electronics</NAME>
+                        <BASEUNITS>Nos</BASEUNITS>
+                        <OPENINGBALANCE>120</OPENINGBALANCE>
+                        <GSTAPPLICABLE>&#4; Applicable</GSTAPPLICABLE>
+                        <GSTDETAILS.LIST>
+                            <APPLICABLEFROM>20200401</APPLICABLEFROM>
+                            <CALCULATIONTYPE>On Value</CALCULATIONTYPE>
+                            <HSNCODE>1234</HSNCODE>
+                            <TAXABILITY>Taxable</TAXABILITY>
+                            <STATEWISEDETAILS.LIST>
+                                <STATENAME>&#4; Any</STATENAME>
+                                <RATEDETAILS.LIST>
+                                    <GSTRATEDUTYHEAD>Central Tax</GSTRATEDUTYHEAD>
+                                    <GSTRATEVALUATIONTYPE>Based on Value</GSTRATEVALUATIONTYPE>
+                                    <GSTRATE> 9</GSTRATE>
+                                </RATEDETAILS.LIST>
+                                <RATEDETAILS.LIST>
+                                    <GSTRATEDUTYHEAD>State Tax</GSTRATEDUTYHEAD>
+                                    <GSTRATEVALUATIONTYPE>Based on Value</GSTRATEVALUATIONTYPE>
+                                    <GSTRATE> 9</GSTRATE>
+                                </RATEDETAILS.LIST>
+                                <RATEDETAILS.LIST>
+                                    <GSTRATEDUTYHEAD>Integrated Tax</GSTRATEDUTYHEAD>
+                                    <GSTRATEVALUATIONTYPE>Based on Value</GSTRATEVALUATIONTYPE>
+                                    <GSTRATE> 18</GSTRATE>
+                                </RATEDETAILS.LIST>
+                                <RATEDETAILS.LIST>
+                                    <GSTRATEDUTYHEAD>Cess</GSTRATEDUTYHEAD>
+                                    <GSTRATEVALUATIONTYPE>Based on Value</GSTRATEVALUATIONTYPE>
+                                </RATEDETAILS.LIST>
+                            </STATEWISEDETAILS.LIST>
+                        </GSTDETAILS.LIST>
+                    </STOCKITEM>
+                </TALLYMESSAGE>
+            </REQUESTDATA>
+        </IMPORTDATA>
+    </BODY>
+</ENVELOPE>

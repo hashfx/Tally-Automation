@@ -1,0 +1,18 @@
+<ENVELOPE> <HEADER>
+	<TALLYREQUEST>Import Data</TALLYREQUEST>
+</HEADER>
+<BODY>
+<IMPORTDATA>
+          <REQUESTDESC>
+		<REPORTNAME>All Masters</REPORTNAME>
+	   </REQUESTDESC>
+	   <REQUESTDATA>
+		<TALLYMESSAGE xmlns:UDF="TallyUDF">
+			<STOCKITEM Action="Alter" Name="item name in tally">
+			   <NAME>name to alter</NAME>
+			</STOCKITEM>
+		</TALLYMESSAGE>
+	   </REQUESTDATA>
+</IMPORTDATA>
+</BODY>
+</ENVELOPE>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Of Vouchers</title>
+     <link type="text/css", href="{{ url_for('static', filename= 'styles.css') }}", rel="stylesheet">
+</head>
+<body>
+<H2>Voucher Register</H2>
+<span>
+<label class="vchTitle">Voucher Type : {{vch_type}}</label>
+<label class="period">From {{from_dt}} to {{to_dt}}</label>
+</span>
+ <table>
+     <tr>
+         <th>Date</th>
+         <th>Particulars</th>
+         <th>Vch.No</th>
+         <th>Vch.Type</th>
+         <th>Amount</th>
+     </tr>
+     {% for vch in data %}
+     <tr>
+         <td>{{vch.date}}</td>
+         <td>{{vch.party_ledger}}</td>
+         <td>{{vch.v_no}}</td>
+         <td>{{vch.v_type}}</td>
+         <td>{{vch.amount}}</td>
+     </tr>
+
+     {% endfor %}
+
+ </table>
+</body>
+</html>
